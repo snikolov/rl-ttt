@@ -1,17 +1,5 @@
-# Setup
-Requirements:
-- nose>=1.3.7
-- numpy>=1.11.1
-- matplotlib>=1.3.1
-
-To install:
-<pre>pip install -r requirements.txt</pre>
-
-To run tests:
-<pre>nosetests</pre>
-
 # Summary
-- I trained an agent to play tic-tac-toe using both the Q-Learning and SARSA algorithms. 
+- I trained an agent to play tic-tac-toe using the Q-Learning and SARSA algorithms. 
 - I train the agents by playing them against themselves (Q-learning vs. Q-learning, SARSA vs SARSA) and against a random agent.
 - I use the following reward structure: 1 for a win, -1 for a loss, 0 for a draw or any other state.
 - I keep track of the value of a state and action using a Q function whose keys are the afterstates resulting from a given state and action.
@@ -26,6 +14,18 @@ To run tests:
   - saving and loading agents (and pre-trained agents in agents directory)
   - human player mode (see Demo).
   - display of gameplay and value map at each step.
+
+# Setup
+Requirements:
+- nose>=1.3.7
+- numpy>=1.11.1
+- matplotlib>=1.3.1
+
+To install:
+<pre>pip install -r requirements.txt</pre>
+
+To run tests:
+<pre>nosetests</pre>
 
 # Results
 ## Q-Learning trained with self-play
